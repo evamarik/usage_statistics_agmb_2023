@@ -38,7 +38,8 @@ rest_top = Bestandsliste_172_rest.head(top_amount)
 '''Some parameters used in the following functions:
     column_name: name of one of the columns that contains usage numbers
     top: one of the top_lists that were created above 
-    input_file: should be a DataFrame containing information from the whole list, e.g.: Bestandsliste_172 '''
+    input_file: should be a DataFrame containing information from the whole list, e.g.: Bestandsliste_172
+    bar_names: list that contains four strings, one for each bar '''
 
 def add_labels_vertical(x, y, text, size):
     for i in range(len(x)):
