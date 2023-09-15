@@ -9,20 +9,20 @@ All the files the code reads must be in the same ordner as the code.
 This code edits a Counter5 Report file that contains stock information on books with a pressmark starting with 172. 
 The data is grouped by 'ISBN' and some columns are removed.
 The new file contains the following columns: 
-	- Signatur
-	- ISBN
-	- Titel
-	- Titelzusatz
-	- Beilagen
-	- Verfasser / Urheber	
-	- Verlag	
-	- Ort	
-	- Jahr
-	- Ausleihzähler gesamt	
-	- Ausleihzähler lf. Jahr
-	- Ausleihzähler Vorjahr
-	- Ausleihzähler Vorvorjahr	
-	- Ausleihzähler aller Jahre vor Vorvorjahr
+- Signatur
+- ISBN
+- Titel
+- Titelzusatz
+- Beilagen
+- Verfasser / Urheber	
+- Verlag	
+- Ort	
+- Jahr
+- Ausleihzähler gesamt	
+- Ausleihzähler lf. Jahr
+- Ausleihzähler Vorjahr
+- Ausleihzähler Vorvorjahr	
+- Ausleihzähler aller Jahre vor Vorvorjahr
 
     
 #### plot_172_for_poster:
@@ -31,6 +31,6 @@ First the code reads the updated file and sorts it based on the usage per year (
 ##### The functions for plotting:
 - plot_top_of_year plots the most used books of a certain year as horizontal bar plot.
 - plot_top_10_2022_shorttitle is a very specific version of the function above. It's for plotting the top tens of 2022 with shorttitles instead of the book title 
-  (those shorttitles were manually added to the updated and soreted file). 
+(those shorttitles were manually added to the updated and soreted file). 
 - plot_top_over_years creates a bar plot, that shows the percentage of the top books within of the books that are lend overall.
 - plot_preclinic_over_years does the same as the function above just for preclinic books instead of the tops.
